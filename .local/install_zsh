@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+installed=`which zsh | grep -E 'zsh' | wc -w`
+
+[ "$installed" -ne "1" ] && (apt install zsh || echo "You aren't running the script as root...") || echo "zsh is already installed..."
