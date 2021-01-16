@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc:
+      force: true
+      path: bashrc
+    ~/.zshrc:
+      force: true
+      path: zshrc
+    ~/.config/:
+      force: true
+      glob: true
+      path: config/*
+
+- create:
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+

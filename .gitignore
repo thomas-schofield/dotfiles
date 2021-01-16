@@ -1,0 +1,12 @@
+# zsh related files
+.zsh_history
+**/.zsh_sessions/
+.zcompdump-*
+
+# Ignore all install nvim plugins
+config/nvim/plugged/
+config/nvim/autoload/
+config/nvim/.netrwhist
+
+# macOS
+.DS_Store
